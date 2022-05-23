@@ -1,0 +1,2568 @@
+@import './fonts.scss';
+@import './media.scss';
+
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: "MyriadPro-Regular";
+}
+
+.header {
+    background-image: url(../img.prj2/Layer_10.png);
+    height: 770px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    opacity: 94%;
+        
+    .header-navigation {
+        width: 73%;
+        height: 42px;
+        margin: 0 50px;
+        padding-left: 80px;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include for-xs-phone-only {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            padding: 20px 0 0 0;
+        }
+
+        @include for-sm-phone-only {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            padding: 20px 0 0 0;
+        }
+
+        @include for-small-phone-only {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include for-phone-only {
+            justify-content: space-between;
+            width: 95%;
+        }
+
+        @include for-desktop-up {
+            width: 88%;
+        }
+       
+        .startup-text {
+            width: 100%;
+            height: 38px;
+            margin: 0;
+            margin-left: 25px;
+            
+            .startup-txt-styles {
+                font-size: 24px;
+                font-weight: 400;
+                color: #ffffff;
+                margin: 0;
+
+                @include for-sm-phone-only {
+                    font-size: 28px;
+                }
+
+                @include for-tablet-portrait-up {
+                    padding-left: 50px;
+                }
+
+                @include for-tablet-landscape-up {
+                    padding-left: 0;
+                }
+
+                @include for-desktop-up {
+                    padding-left: 50px;
+                    margin-left: 30px ;
+                }
+            }
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            height: 14px;
+            justify-content: space-between;
+            list-style: none;
+
+          
+            @include for-xs-phone-only {
+                flex-direction: column;
+                display: none;
+            }
+
+            @include for-sm-phone-only {
+                display: none;
+            }
+
+            @include for-phone-only {
+                display: flex;
+                padding-left: 1px;
+                margin-top: 10px;
+                margin-left: 40px;
+            }
+
+            @include for-tablet-portrait-up {
+                width: 50%;
+            }
+
+            @include for-tablet-landscape-up {
+                width: 45%;
+            }
+            
+            .nav-link {
+                text-decoration: none;
+                color: #ffffff;
+                font-family: "MyriadPro-Regular";
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.35px;
+
+                @include for-phone-only {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    .header-center-box {
+        height: 92%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .txt-and-btn-header {
+            padding-bottom: 80px;
+            margin: 0 auto;
+            flex-direction: column;
+
+            @include for-small-phone-only {
+                width: 100%;
+            }
+
+            .header-top-text {
+                width: 459px;
+                height: 220px;
+                display: flex;
+                flex-direction: column; 
+
+                @include for-xs-phone-only {
+                    width: 100%;
+                }
+
+                @include for-sm-phone-only {
+                    margin: 0 auto;
+                    width: 100%;
+                }
+
+                @include for-small-phone-only {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                .welcome-to-startup {
+                    color: #ffffff;
+                    font-size: 40px;
+                    letter-spacing: 4px;
+                    font-weight: 400;
+                    margin: 0 auto;
+
+                    @include for-xs-phone-only {
+                        font-size: 27px;
+                    }
+
+                    @include for-sm-phone-only {
+                        font-size: 33px;
+                        margin: 0 auto;
+                        text-align: center;
+                        width: 90%;
+                    }
+
+                    @include for-phone-only {
+                        font-size: 40px;
+                    }
+                }
+
+                .little-txt-header {
+                    color: #ffffff;
+                    font-family: "Myriad Pro";
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                    padding-top: 25px;
+                    margin: 0;
+
+                    @include for-xs-phone-only {
+                        font-size: 15px;
+                    }
+
+                    @include for-sm-phone-only {
+                        font-size: 17px;
+                        width: 93%;
+                        margin: 0 auto;
+
+                    }
+                }
+
+                .btn-get-started {
+                    display: flex;
+                    justify-content: center;
+                    padding: 50px;
+
+                    .btn-get-started-styles {
+                        width: 180px;
+                        height: 50px;
+                        border-radius: 2px;
+                        border: 2px solid #ffffff;
+                        background-color: #ffffff;
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: "Myriad Pro";
+
+                    }
+
+                    .btn-get-started-styles:hover {
+                        color: #ffffff;
+                        background-color: #ffffff00;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.services-section {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+
+    @include for-xs-phone-only {
+        align-items: center;
+        height: 100%;
+    }
+
+    @include for-sm-phone-only {
+        height: auto;
+    }
+
+    .box-services-and-icon {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title-and-subtitle {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 30px auto;
+
+            @include for-sm-phone-only {
+                width: 100%;
+            }
+
+
+            .services-styles {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                color: #555555;
+                font-family: "Myriad Pro";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .services-styles::after {
+                margin: 25px auto;
+                width: 50px;
+                content: '';
+                height: 2px;
+                background-color: #555555;
+            }
+
+            .subtitle-styles {
+                color: #555555;
+                font-family: "Myriad Pro";
+                font-size: 16px;
+                font-weight: 400;
+                padding-top: 10px;
+
+                @include for-xs-phone-only {
+                    font-size: 13px;
+                    margin: 0 auto;
+                    padding-top: 25px;
+                    width: 250px;
+                    text-align: center;
+                }
+
+                @include for-sm-phone-only {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    padding: 0;
+                }
+
+                @include for-tablet-landscape-up {
+                    font-size: 16px;
+                }
+
+                @include for-desktop-up {
+                   font-size: 18px;
+                }
+            }
+        }
+
+        .single-services {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            
+            @include for-xs-phone-only {
+                flex-direction: column;
+                padding-top: 25px;
+            }
+
+            @include for-sm-phone-only {
+                padding-top: 25px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @include for-small-phone-only {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            @include for-phone-only {
+                justify-content: space-around;
+            }
+
+            .service-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 335px;
+                width: 60%;
+                
+                @include for-xs-phone-only  {
+                    margin: 20px auto;
+                    align-items: center;
+                    width: 80%;
+                }
+
+                @include for-sm-phone-only {
+                    margin: 20px 0 20px 0;
+                }
+
+                @include for-small-phone-only {
+                    margin-top: 50px;
+                    height: 100%;
+                }
+
+                @include for-tablet-portrait-up {
+                    padding: 0 10px 0 10px;
+                }
+
+                .eclipse-styles {
+                    width: 90px;
+                    height: 90px;
+                    position: absolute;   
+                    
+                    @include for-xs-phone-only {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .service-icon {
+                    width: 90px;
+                    height: 90px;
+
+                    @include for-xs-phone-only {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .icon-symbols {
+                    width: 43px;
+                    height: 40px;
+                    background-color: #c0301c;
+                    position: relative;
+                    z-index: 2;
+                    top: 20px;
+                    margin-bottom: 52px;
+
+                    @include for-xs-phone-only {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                .title-service-text {
+                    color: #555555;
+                    font-family: "Myriad Pro";
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    @include for-xs-phone-only {
+                        font-size: 22px;
+                        margin: 20px auto;
+                    }
+
+                    @include for-tablet-landscape-up {
+                        font-size: 18px;
+                    }
+                }
+
+                .subtitle-service-text {
+                    color: #555555;
+                    font-family: "Myriad Pro";
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    display: flex;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0 10px 0 10px;
+
+                    @include for-xs-phone-only {
+                        font-size: 16px;
+                    }
+
+                    @include for-phone-only {
+                        padding-left: 15px;
+                    }
+
+                    @include for-desktop-up {
+                        font-size: 18px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-about-us {
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+   
+
+    .box-and-img-about-us {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        @include for-desktop-up {
+            height: 80%;
+        }
+
+
+        .about-us-text {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 70px;
+            padding-top: 30px;
+            margin-bottom: 70px;
+
+            @include for-xs-phone-only {
+                margin: 25px 0 25px 0;
+            }
+
+            @include for-sm-phone-only {
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }
+
+            .about-us-styles {
+                color: #555555;
+                font-family: "Myriad Pro";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .about-us-styles::after {
+                margin: 25px auto;
+                width: 50px;
+                content: '';
+                height: 2px;
+                background-color: #555555;
+            }
+
+            .about-us-subtitle {
+                color: #555555;
+                font-family: "Myriad Pro";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 25px auto;
+                text-align: center;
+
+                @include for-xs-phone-only {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .left-and-right-txt-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 74px;
+            margin: 0 auto;
+
+            @include for-xs-phone-only {
+                width: 95%;
+                margin: 0 auto;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-around;
+            }
+
+            @include for-sm-phone-only {
+                flex-direction: column;
+                width: 95%;
+            }
+
+            @include for-small-phone-only {
+                width: 85%;
+            }
+
+            @include for-phone-only {
+                flex-direction: row;
+                width: 90%;
+            }
+
+            @include for-tablet-portrait-up {
+                width: 80%;
+            }
+
+            @include for-tablet-landscape-up {
+                width: 88%;
+            }
+
+            .container-about-us {
+                width: 100%;
+                height: 100%;  
+
+                @include for-xs-phone-only {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                }
+
+                @include for-sm-phone-only {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                }
+
+                .about-us-text-styles {
+                    color: #555555;
+                    font-family: "Myriad Pro";
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    padding-top: 30px;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+
+                    @include for-xs-phone-only {
+                        display: flex;
+                        text-align: center;
+                    }
+
+                    @include for-sm-phone-only {
+                        display: flex;
+                        text-align: center;
+                        padding: 0;
+                    }
+
+                    @include for-phone-only {
+                        width: 95%;
+                    }
+
+                    @include for-tablet-landscape-up {
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .img-about-us {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: row;
+        margin-top: 70px;
+        justify-content: space-between;
+
+        @include for-xs-phone-only {
+            margin: 0 auto;
+            flex-direction: column;
+        }
+
+        @include for-sm-phone-only {
+            flex-wrap: wrap;
+        }
+
+        @include for-phone-only {
+            justify-content: space-around;
+        }
+
+        @include for-tablet-portrait-up {
+            justify-content: space-around;
+            margin-top: 0;
+            width: 90%;
+            height: 100%;
+        }
+
+        @include for-tablet-landscape-up {
+            width: 95%;
+        }
+
+        @include for-desktop-up {
+            width: 80%;
+        }
+
+        .img-and-text-about-us {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @include for-xs-phone-only {
+                flex-direction: row;
+                width: 90%;
+                padding: 0 0 10px 10px;             
+            }
+
+            @include for-sm-phone-only {
+                flex-direction: row;
+                padding: 0 0 10px 10px;
+            }
+            
+            @include for-phone-only {
+               flex-direction: column;
+               width: 263px;
+               height: 360px;
+            }
+
+            @include for-tablet-portrait-up {
+                padding: 0 10px 10px 10px;
+                width: auto;
+                height: 100%;
+            }
+
+            @include for-tablet-landscape-up {
+                padding: 0 5px 5px 5px; 
+            }
+        
+            .image-and-middle {
+                height: 250px;
+                max-height: 250px;
+
+                @include for-xs-phone-only {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                @include for-phone-only {
+                    width: 263px;
+                    height: 250px;
+                }
+
+                @include for-tablet-portrait-up {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                @include for-tablet-landscape-up {
+                    width: 263px;
+                    height: 250px;
+                }
+
+                .image {
+                    display: block;
+                    width: 263px;
+                    height: 250px;
+                    transition: .5s ease;
+                    backface-visibility: hidden;
+    
+                    @include for-xs-phone-only {
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                    @include for-sm-phone-only {
+                        width: 250px;
+                        height: 250px;
+                    }
+
+                    @include for-small-phone-only {
+                        width: 263px;
+                        height: 250px;
+                    }
+
+                    @include for-tablet-portrait-up {
+                        width: 200px;
+                        height: 200px;
+                    }  
+
+                    @include for-tablet-landscape-up {
+                        width: 263px;
+                        height: 250px;
+                    }
+                } 
+                
+                .middle {
+                    transition: .5s ease;
+                    opacity: 1;
+                    display: none;
+                    transform: translate(0, -110%);
+                    text-align: center;
+    
+                    .text {
+                        color: white;
+                        font-size: 16px;
+                        padding: 16px 32px;
+    
+                        .fab {
+                            color: white;
+                            width: 17px;
+                            height: 14px;
+                            padding: 7px 7px 7px 7px;
+                        }
+    
+                        .fab:hover{
+                            cursor:pointer;
+                            background-color: #c0301c;
+                            padding: 7px 7px 7px 7px;
+                        }
+                    }
+                }
+            }    
+    
+            .middle-text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                @include for-xs-phone-only {
+                    width: 70%;
+                    height: 200px;
+                }
+
+                @include for-small-phone-only {
+                    width: 40%;
+                }
+                
+                @include for-phone-only {
+                    width: 100%;
+                }
+
+                .name-boys {
+                    color: #555555;
+                    font-family: "Myriad Pro";
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: flex;
+                    justify-content: center;
+                    margin: 21px auto;
+
+                    @include for-xs-phone-only {
+                        align-items: center;
+                        margin-top: 25px;
+                    }
+
+                    @include for-sm-phone-only {
+                        padding-top: 50px;
+                    }
+
+                    @include for-phone-only {
+                       padding-top: 10px;
+                    }
+                }
+
+                .class-boys {
+                    margin-top: 16px;
+                    color: #555555;
+                    font-family: "Myriad Pro";
+                    font-size: 13px;
+                    font-weight: 400;
+                    display: flex;
+                    justify-content: center;
+
+                    @include for-xs-phone-only {
+                        font-size: 14px;
+                        padding-top: 30px;
+                        color: red;
+                        height: auto;
+                        width: 90%;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+            }    
+        }
+
+        .img-and-text-about-us:hover .image {
+            filter: contrast(40%);
+        }
+
+        .img-and-text-about-us:hover .middle {
+            display: block;
+        }
+    }
+}
+
+.latest-work-section {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .text-and-img-collage {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 30px;
+
+        @include for-xs-phone-only {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .latest-works-and-line {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            
+
+            .latest-works-styles {
+                color: #555555;
+                font-family: "Myriad Pro";
+                font-size: 20px;
+                font-weight: 400;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 auto;
+            }
+
+            .latest-works-styles::after {
+                margin: 25px auto;
+                width: 50px;
+                content: '';
+                height: 2px;
+                background-color: #555555;
+            }
+
+            .menu-latest-works {
+                display: flex;
+                flex-direction: row;
+                width: 364px;
+                height: 16px;
+                list-style: none;
+                justify-content: space-between;
+                margin-top: 30px;
+                padding: 0;
+
+                @include for-xs-phone-only {
+                    width: 350px;
+                    height: 100%;
+                }
+
+                .menu-links-styles {
+                    text-decoration: none;
+                    color: #555555;
+                    font-family: "Myriad Pro";
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                @include for-xs-phone-only {
+                    display: flex; 
+                    align-items: center;
+                }
+
+                .menu-links-styles:hover {
+                   color: #ad5447; 
+                }
+            }
+        }
+
+        .img-collage-size {
+            height: 1020px;
+            width: 1140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-top: 39px;
+
+            @include for-xs-phone-only {
+                width: 100%;
+                height: 100%;
+            }
+
+            @include  for-sm-phone-only {
+                width: 100%;
+                height: 100%;
+            }
+
+            @include for-small-phone-only {
+                width: 100%;
+            }
+
+            .collage-line-img {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                @include for-xs-phone-only {
+                    align-items: center;
+                    margin: 0 auto;
+                }
+
+                @include for-sm-phone-only {
+                    justify-content: space-around;
+                }
+
+                @include for-phone-only {
+                    width: 85%;
+                    margin: 0 auto;
+                }
+
+                @include for-tablet-portrait-up {
+                    width: 87%;
+                    margin: 0 auto;
+                }
+
+                @include for-tablet-landscape-up {
+                    width: 90%;
+                }
+
+                @include for-desktop-up {
+                    width: 80%;
+                }
+
+    
+                .collage-place {
+                    width: 360px;
+                    height: 320px;
+                    justify-content:center;
+                    position: relative;
+                    padding-top: 20px;
+
+                    @include for-xs-phone-only {   
+                        height: auto;
+                        width: 250px;
+                        height: 250px;
+                        margin: 0 auto;
+                    }
+
+                    @include  for-sm-phone-only {
+                        width: 250px;
+                        height: 250px;
+                        margin: 0 auto;
+                        margin: 0 5px 0 5px;
+                    }
+
+                    @include for-phone-only {
+                        height: 280px;
+                        width: 280px;
+                    }
+
+                    @include for-tablet-portrait-up {
+                        height: 280px;
+                        width: 280px;
+                        margin: 0;
+                    }
+
+                    @include for-tablet-landscape-up {
+                        width: 340px;
+                        height: 300px;
+                    }
+
+                    @include for-desktop-up {
+                        width: 360px;
+                        height: 320px;
+                    }
+
+                    .collage-img-styles {
+                        opacity: 1;
+                        display: block;
+                        width: 360px;
+                        position: absolute;
+                        height: 320px;
+                        transition: .5s ease;
+                        backface-visibility: hidden;
+
+                        @include for-xs-phone-only {
+                            width: 250px;
+                            height: 250px;
+                        }
+
+                        @include  for-sm-phone-only {
+                            width: 250px;
+                            height: 250px;
+                        }
+
+                        @include for-phone-only {
+                            height: 280px;
+                            width: 280px;
+                        }
+
+                        @include for-tablet-portrait-up {
+                            height: 280px;
+                            width: 280px;
+                        }
+
+                        @include for-tablet-landscape-up {
+                            width: 340px;
+                            height: 300px;
+                        }
+
+                        @include for-desktop-up {
+                            width: 360px;
+                            height: 320px;
+                        }
+
+                    }
+    
+                    .collage-img-txt-btn {
+                        transition: .5s ease;
+                        opacity: 0;
+                        position: absolute;
+                        top: 0 auto;
+                        width: 360px;
+                        height: 320px;
+                        display:flex;
+                        flex-direction:column;
+
+                        @include for-xs-phone-only {
+                            width: 250px;
+                            height: 250px;
+                        }
+
+                        @include  for-sm-phone-only {
+                            width: 250px;
+                            height: 250px;
+                        }
+
+                        @include for-phone-only {
+                            height: 280px;
+                            width: 280px;
+                        }
+
+                        @include for-tablet-portrait-up {
+                            height: 280px;
+                            width: 280px;
+                        }
+
+                        @include for-tablet-landscape-up {
+                            width: 340px;
+                            height: 300px;
+                        }
+
+                        @include for-desktop-up {
+                            width: 360px;
+                            height: 320px;
+                        }
+
+                        .hair-txt-styles {
+                            color: #ffffff;
+                            font-family: "Myriad Pro";
+                            font-size: 18px;
+                            font-weight: 400;
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 0;
+                            margin-top: 70px;
+                            padding-top: 35px;
+
+                            @include for-xs-phone-only {
+                                padding-top: 10px;
+                            }
+
+                            @include for-small-phone-only {
+                                margin: 0;
+                                padding: 0;
+                                padding-top: 80px;
+                                
+                            }
+                        }
+
+                        .branding-txt-styles {
+                            color: #ffffff;
+                            font-family: "Myriad Pro";
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            display:flex;
+                            justify-content:center;
+                        }
+    
+                        .collage-button-styles {
+                            margin: 0 auto;
+                            width: 100px;
+                            height: 38px;
+                            display:flex;
+                            justify-content:center;
+                            color: #c0301c;
+                            align-items: center;
+                            border-radius: 2px;
+                            border: 2px solid #ffffff;
+                            background-color: #ffffff;
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-family: "Myriad Pro";
+                            cursor: pointer;
+
+                            .btn-fa-angle-left {
+                                width: 6px;
+                                height: 10px;
+                                padding-left: 15px;
+                                
+                            }
+                        }
+                        
+                        .collage-button-styles:hover {
+                            color: #ffffff;
+                            background-color: #e2e1e100;
+                            border-radius: 2px;
+                            border: 2px solid #ffffff;
+                        }
+                    }
+                } 
+                .collage-place:hover .collage-img-styles{
+                    opacity: 0.4;
+                    
+                }
+
+                .collage-place:hover .collage-img-txt-btn {
+                    opacity: 0.7;
+                    background: #c0301c;
+                    z-index: 9;
+                }
+            }
+        }
+    }
+}
+
+.red-line-section {
+    width: 100%;
+    height: 100%; 
+
+    .background-red-section {
+        height: 369px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        @include for-xs-phone-only {
+            height: 200px;
+        }
+
+        @include  for-sm-phone-only {
+            height: 250px;
+        }
+
+        @include for-small-phone-only {
+            height: 280px;
+        }
+
+        @include for-phone-only {
+            height: 300px;
+        }
+
+        @include for-tablet-portrait-up {
+            height: 320px;
+        }
+
+        @include for-tablet-landscape-up {
+            height: 350px;
+        }
+
+        @include for-big-desktop-up {
+            height: 370px;
+        }
+
+
+        .img-red-line-bg {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            position: absolute;
+            height: 369px;
+            transition: .5s ease;
+            backface-visibility: hidden;
+
+            @include for-xs-phone-only {
+                height: 200px;
+            }
+
+            @include for-sm-phone-only {
+                height: 250px;
+            }
+
+            @include for-small-phone-only {
+                height: 280px;
+            }
+
+            @include for-phone-only {
+                height: 300px;
+            }
+
+            @include for-tablet-portrait-up {
+                height: 320px;
+            }
+
+            @include for-tablet-landscape-up {
+                height: 350px;
+            }
+
+            @include for-big-desktop-up {
+                height: 370px;
+            }
+    
+        }
+
+        .red-section-txt {
+            transition: .5s ease;
+            opacity: 0;
+            position: relative;
+            width: 100%;
+            height: 369px;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+
+            @include for-xs-phone-only {
+                height: 200px;
+            }
+
+            @include for-sm-phone-only {
+                height: 250px;
+            }
+
+            @include for-small-phone-only {
+                height: 280px;
+            }
+
+            @include for-phone-only {
+                height: 300px;
+            }
+
+            @include for-tablet-portrait-up {
+                height: 320px;
+            }
+
+            @include for-tablet-landscape-up {
+                height: 350px;
+            }
+
+            @include for-big-desktop-up {
+                height: 370px;
+            }
+    
+
+            .project-txt-styles {
+                color: #ffffff;
+                font-family: "Myriad Pro";
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 44px;
+                margin: 0 auto;
+
+                @include for-xs-phone-only {
+                    font-size: 20px;
+                }
+
+                @include for-sm-phone-only {
+                    font-size: 25px;
+                }
+
+            }
+
+            .get-in-touch-btn-styles {
+                margin: 0 auto;
+                margin-top: 54px;
+                width: 180px;
+                height: 50px;
+                display:flex;
+                justify-content:center;
+                color: #c0301c;
+                align-items: center;
+                border-radius: 2px;
+                border: 2px solid #ffffff;
+                background-color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: "Myriad Pro";
+                cursor: pointer;
+
+                @include for-xs-phone-only {
+                    margin-top: 15px;
+                }
+
+                @include for-sm-phone-only {
+                    margin-top: 10px;
+                }
+
+                @include for-small-phone-only {
+                    margin-top: 25px;
+                }
+            }
+
+            .get-in-touch-btn-styles:hover {
+                color: #ffffff;
+                background-color: #e2e1e100;
+                border-radius: 2px;
+                border: 2px solid #ffffff;
+            }
+        }
+    }
+
+    .background-red-section:hover .img-red-line-bg{
+        opacity: 0.4;
+    }
+
+    .background-red-section:hover .red-section-txt{
+        opacity: 0.7;
+        background: #c0301c;
+        z-index: 9;
+    }  
+}
+
+.blog-posts-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @include for-xs-phone-only {
+        width: 100%;
+    }
+
+    @include for-sm-phone-only {
+        width: 100%;
+    }
+
+
+    .box-blog-posts {
+        width: 1142px;
+        height: 881px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        @include for-xs-phone-only {
+            width: 100%;
+            height: auto;
+        }
+
+        @include for-sm-phone-only {
+            height: auto;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        @include for-small-phone-only {
+           height: auto;
+           width: 576px;
+        }
+
+        @include for-phone-only  {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        @include for-tablet-portrait-up  {
+            width: 991px;
+        }
+
+        @include for-tablet-landscape-up {
+            width: 1199px;
+        }
+
+        @include for-desktop-up  {
+            width: 1365px;
+        }
+
+        .title-blog-posts {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+
+            @include for-sm-phone-only  {
+                width: 90%;
+                height: 100%;
+            }
+
+            @include for-phone-only {
+                width: 100%;
+                margin-top: 25px;
+            }
+
+            @include for-tablet-portrait-up {
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            @include for-desktop-up  {
+                width: 1365px;
+                margin-top: 45px;
+            }
+            
+
+            .title-blog-styles {
+                color: #555555;
+                font-family: "Myriad Pro";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+
+                @include for-xs-phone-only {
+                    font-size:  15px;
+                    padding-top: 20px;
+                }
+            }
+
+            .title-blog-styles::after {
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                margin-top: 20px;
+                content: '';
+                height: 2px;
+                background-color: #555555;
+            }
+
+            .subtitle-blog-styles {
+                color: #555555;
+                font-family: "Myriad Pro";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-top: 25px;
+                text-align: center;
+
+                @include for-xs-phone-only {
+                    font-size: 14px;
+                    width: 100%;
+                }
+
+                @include  for-sm-phone-only {
+                    display: flex;
+                    text-align: center;
+                    width: 90%;
+                    margin: 25px auto;
+                }
+
+                @include for-small-phone-only {
+                    width: 420px;
+                }
+            }
+        }
+
+        .startup-ideas-box {
+            width: 1128px;
+            height: 322px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 77px;
+
+            @include for-xs-phone-only {
+                width: 100%;
+                flex-direction: column;
+                height: auto;
+                margin: 0;
+            }
+
+            @include for-sm-phone-only {
+                width: 100%;
+                flex-direction: column;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            @include for-small-phone-only {
+                width: 576px;
+                height: auto;
+                flex-direction: column;
+            }
+
+            @include for-phone-only  {
+                width: 100%;
+                margin-top: 30px;
+                flex-direction: row;
+            }
+
+            @include for-tablet-portrait-up  {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            @include for-tablet-landscape-up {
+                width: 1195px;
+            }
+
+            @include for-desktop-up  {
+                width: 1365px;
+            }
+
+            .img-ideas {
+                width: 460px;
+                height: 322px;
+                margin-top: 50px;
+
+                @include for-xs-phone-only {
+                    width: 345px;
+                    height: 270px;
+                }
+
+                @include for-sm-phone-only {
+                    width: 400px;
+                    margin: 50px 0 0 10px;
+                }
+
+                @include for-small-phone-only {
+                   width: 460px;
+                   margin-right: 20px;
+                   height: auto;
+                }   
+
+                @include for-phone-only {
+                    margin-top: 20px;
+                    width: 280px;
+                    height: 275px;
+                }
+
+                @include for-tablet-portrait-up {
+                    width: 420px;
+                    height: 345px;
+                }
+
+                @include for-tablet-landscape-up {
+                    width: 460px;
+                    height: 325px;
+                }
+
+                .img-ideas-box-styles {
+                    @include for-xs-phone-only {
+                        width: 345px;
+                        height: 280px;
+                        padding-left: 15px;
+                        margin-top: 20px;
+                    }
+
+                    @include for-sm-phone-only {
+                        width: 400px;
+                        height: 300px;
+                    }
+
+                    @include for-small-phone-only {
+                        width: 460px;
+                        height: 322px;
+                    }
+
+                    @include for-phone-only  {
+                        width: 300px;
+                        height: 305px;
+                    }
+
+                    @include for-tablet-portrait-up  {
+                        width: 420px;
+                        height: 345px;
+                    }
+
+                    @include for-tablet-landscape-up {
+                        width: 460px;
+                        height: 325px;
+                    }
+                }
+            }
+
+            .title-and-main-text {
+                display: flex;
+                flex-direction: column;
+                width: 629px;
+                height: 322px;
+                margin-top: 50px;
+
+                @include for-xs-phone-only {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                @include for-sm-phone-only {
+                    width: 100%;
+                    height: 100%;
+                    margin: 30px auto;
+                }
+
+                @include for-small-phone-only {
+                   width: 500px;
+                   height: 280px;
+                   margin: 30px 0 0 10px ;
+                }
+
+                @include for-phone-only  {
+                    width: 440px;
+                    height: 100%;
+                    margin-top: 20px;
+                }
+
+                @include for-tablet-portrait-up  {
+                    margin-top: 25px;
+                    width: 90%;
+                    height: 320px;
+                }
+
+                @include for-tablet-landscape-up {
+                    width: 630px;
+                    height: 320px;
+                }
+               
+
+                .date-and-title {
+                    display: flex;
+                    width: 450px;
+                    height: 76px;
+
+                    @include for-xs-phone-only {
+                        width: 90%;
+                        padding-left: 15px;
+                    }
+
+                    @include for-sm-phone-only {
+                        width: 95%;
+                        padding-left: 15px;
+                    }
+
+                    @include for-small-phone-only {
+                        padding-left: 5px;
+                    }
+
+                    @include for-tablet-portrait-up  {
+                        width: 90%;
+                    }
+
+                    .date-img {
+                        width: 76px;
+                        height: 76px;
+
+                        @include for-xs-phone-only {
+                            width: 56px;
+                            height: 56px;
+                        }
+
+                        @include for-sm-phone-only {
+                            width: 56px;
+                            height: 56px;
+                        }
+
+                        @include for-tablet-portrait-up {
+                            width: 76px;
+                            height: 76px;
+    
+                        }
+                    }
+
+                    .text-ideas-title-and-subtitle{
+                        margin-top: 12px;
+                        display: flex;
+                        flex-direction: column;
+
+                        @include for-xs-phone-only {
+                            width: 100%;
+                        }
+                        
+
+                        @include  for-sm-phone-only {
+                            width: 320px;
+                        }
+
+                        @include for-small-phone-only {
+                            width: 350px;
+                        }
+
+                        .ideas-text-margin {
+                            margin: 0 5px 18px 61px;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            font-family: "Myriad Pro";
+                            width: 350px;
+
+                            @include for-xs-phone-only {
+                                width: 100%;
+                                margin: 0 auto;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                            }
+
+                            @include  for-sm-phone-only {
+                                margin-left: 30px;
+                                width: 280px;
+                            }
+
+                            @include for-small-phone-only {
+                                width: 350px;
+                                margin-left: 61px;
+                            }
+
+                            @include for-phone-only {
+                                width: 300px;
+                            }
+
+                            @include for-tablet-portrait-up {
+                                width: 280px ;
+                            }
+
+                            .title-ideas-styles {
+                                text-decoration: none;
+                                color: #777777;
+
+                                @include for-xs-phone-only {
+                                    width: 100%;
+                                }
+                            }
+
+                            .title-ideas-styles:hover {
+                                color: #c0301c;
+                            }
+                            
+                        }
+
+                        .subtitle-ideas-styles {
+                            color: #777777;
+                            font-size: 13px;
+                            font-family: "Myriad Pro";
+                            font-weight: 400;
+                            margin: 0 5px 0 40px;
+
+                            .title-ideas-styles {
+                                text-decoration: none;
+                                color: #777777;
+                            }
+
+                            .title-ideas-styles:hover {
+                                color: #c0301c;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .main-text-and-read-more {
+                    margin-top: 23px;
+
+                    @include for-xs-phone-only {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    @include for-sm-phone-only {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    @include for-phone-only  {
+                        height: 250px;
+                        width: auto;
+                        margin-top: 10px;
+                    }
+
+                    @include for-tablet-portrait-up {
+                      margin-top: 15px;
+                      height: 100%;
+                      width: 100%;
+                    }
+
+                    @include for-tablet-portrait-up {
+                        margin-top: 35px;
+                    }
+                    
+
+                    .main-text-ideas-box {
+                        color: #555555;
+                        font-family: "Myriad Pro";
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        margin: 0;
+
+                        @include for-xs-phone-only {
+                           height: 100%; 
+                           width: 93%;
+                           margin: 0 auto;
+                           display: flex;
+                           text-align: center;
+                        }
+
+                        @include for-sm-phone-only {
+                            height: 100%;
+                            padding-left: 15px;
+                            width: 82%;
+                        }
+
+                        @include for-small-phone-only {
+                            width: 460px;
+                            margin-bottom: 20px;
+                            height: 140px;
+                        }
+
+                        @include for-phone-only  {
+                            height: 175px;
+                            width: 410px;
+                            margin-bottom: 5px;
+                        }
+
+                        @include for-tablet-portrait-up {
+                            width: 100%;
+                            padding-left: 5px;
+                        }
+
+                        @include for-tablet-landscape-up {
+                            width: 80%;
+                        }
+
+                        @include for-big-desktop-up {
+                            width: 85%;
+                            height: 160px;
+                        }
+                       
+                    }
+
+                    .read-more-text {
+                        font-size: 13px;
+                        font-weight: 400;
+                        font-family: "Myriad Pro";
+                        text-decoration: none;
+                        color: #777777;
+
+                        @include for-xs-phone-only {
+                            padding-left: 40px;
+                        }
+
+                        @include for-sm-phone-only {
+                            padding-left: 50px;
+                        }
+                    }
+                    
+                    .read-more-text:hover {
+                        text-decoration: none;
+                        color: #c0301c;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.clients-section {
+    height: 477px;
+    width: 100%;
+    background-color: #f8f8f8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include for-xs-phone-only {
+        height: 100%;
+        width: 100%;
+    }
+
+    @include for-sm-phone-only {
+        width: 100%;
+        height: 550px;
+    }
+
+    @include for-small-phone-only {
+        height: 100%;
+    }
+
+    .clients-location {
+       width: 898px;
+       height: 400px;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       margin: 0 auto;
+
+       @include for-xs-phone-only {
+            height: 100%;
+            width: 100%;
+        }
+
+        @include for-sm-phone-only {
+            height: 530px;
+            width: 426px;
+        }
+
+        @include for-small-phone-only {
+            width: 100%;
+        }
+
+        .clients-logo {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           padding-top: 12px;
+
+           @include for-xs-phone-only {
+                height: 300px;
+                width: 90%;
+                margin: 0 auto;
+                flex-direction: column;
+                margin-top: 2px;
+                align-items: center;
+
+            }
+
+            @include for-sm-phone-only {
+                height: 350px;
+                width: 90%;
+                margin: 0 auto;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @include for-small-phone-only {
+                justify-content: space-around;
+                width: 90%;
+                height: 350px;
+            }   
+
+            @include for-phone-only  {
+                flex-direction: row;
+                width: 95%;
+                height: 250px;
+            }
+
+            @include for-tablet-portrait-up {
+                height: 200px;
+                width: 90%;
+            }
+            
+           .deorham-size {
+                width: 141px;
+                height: 27px;
+                margin-top: 11px;
+
+                @include for-phone-only {
+                    margin-top: 0;
+                }
+           }
+
+           .ratings-size {
+                width: 121px;
+                height: 49px;
+           }
+            
+           .malik-media-size {
+                width: 142px;
+                height: 17px;
+                margin-top: 16px;
+
+                @include for-xs-phone-only {
+                    margin: 0;
+                }
+
+                @include for-sm-phone-only {
+                    margin: 0;
+                }
+           }
+
+           .bcause-size {
+                width: 109px;
+                height: 21px;
+                margin-top: 12px;
+
+                @include for-sm-phone-only {
+                    margin: 0;
+                    width: 120px;
+                    height: 30px;
+                }
+           }
+
+           .wompify-size {
+                width: 123px;
+                height: 46px;
+           }
+        }
+
+        .clients-main-text {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 64px;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            width: 760px;
+            height: 155px;
+
+
+            @include for-xs-phone-only {
+                width: 100%;
+                padding-bottom: 10px;
+                height: 220px;
+            }
+
+            @include for-sm-phone-only {
+                width: 100%;
+                height: 250px;
+                margin-top: 35px;
+            }
+
+            @include for-small-phone-only {
+                height: 250px;
+                width: 100%;
+                margin-top: 5px;
+                padding-bottom: 10px;
+            }
+
+
+            @include for-phone-only {
+                height: 180px;
+            }
+
+            .clients-text-styles {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 400;
+                color: #555555;
+                line-height: 30px;
+                font-family: "Myriad Pro";
+            }
+
+            @include for-xs-phone-only {
+                width: 90%;
+            }
+
+            @include for-sm-phone-only {
+                width: 90%;
+            }
+
+            @include for-phone-only {
+                width: 60%;
+            }
+
+            @include for-tablet-landscape-up {
+                width: 40%;
+            }
+
+            .clients-text-subtitle {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 400;
+                color: #555555;
+                line-height: 30px;
+                font-family: "Myriad Pro";
+
+                @include for-small-phone-only {
+                    padding-top: 15px;
+                }
+            }
+
+            .poinets-styles {
+                width: 53px;
+                height: 13px;
+                display: flex;
+                margin: 0 auto;
+
+                @include for-small-phone-only {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.footer-section {
+    height: 75vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include for-xs-phone-only {
+        height: 100%;
+        width: 100%;
+    }
+
+    @include for-sm-phone-only {
+        height: 100%;
+        width: 100%;       
+    }
+
+    .footer-box-size {
+        width: 1126px;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 80px;
+
+        @include for-xs-phone-only {
+            width: 100%;
+            height: 100%;
+            margin: 45px auto;
+        }
+
+        @include for-sm-phone-only {
+            width: 100%;
+            height: 100%;
+            margin-top: 45px;
+        }
+
+        .footer-title-and-subtitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 422px;
+            height: 91px;
+            margin: 0 auto;
+
+            @include for-xs-phone-only {
+                width: 100%;
+                height: 100%;
+            }
+
+            @include for-sm-phone-only {
+                width: 100%;
+                height: 100%;
+            }
+
+
+            .footer-title {
+                margin: 0;
+                color: #555555;
+                font-family: "Myriad Pro";
+                font-size: 20px;
+                font-weight: 400;
+                display: flex;
+                flex-direction: column;
+
+                @include for-xs-phone-only {
+                    margin: 0 auto;
+                }
+
+                @include for-sm-phone-only {
+                    height: 100%;
+                }
+            }
+            .footer-title::after {
+                margin: 39px auto;
+                width: 50px;
+                content: '';
+                height: 2px;
+                background-color: #555555;
+            }
+
+            .footer-subtitle {
+                margin-top: 29px;
+                color: #555555;
+                font-family: "Myriad Pro";
+                font-size: 16px;
+                font-weight: 400;
+
+                @include for-xs-phone-only {
+                    width: 90%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+
+        .information-and-questions-box {
+            width: 1126px;
+            height: 350px;
+            margin-top: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            @include for-xs-phone-only {
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                margin-bottom: 30px;
+            }
+
+            @include for-sm-phone-only {
+                flex-direction: column;
+                width: 426px;
+                height: auto;
+                margin-bottom: 30px;
+            }
+
+            @include for-small-phone-only {
+                width: 100%;
+                height: auto;
+                margin: 10px 0 30px 0;
+            }
+
+            @include for-desktop-up {
+                width: 85%;
+                margin: 0 auto;
+            }
+
+            .information-box {
+                width: 210px;
+                height: 295px;
+                display: flex;
+                flex-direction: column;
+
+                @include for-xs-phone-only {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin-left: 25px;
+                }
+                
+                @include for-sm-phone-only {
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: space-around;
+                }
+
+                @include for-small-phone-only {
+                    flex-direction: row;
+                    width: 95%;
+                    margin: 0 auto;
+                }
+
+                @include for-phone-only {
+                    width: 80%;
+                }
+
+                @include for-tablet-landscape-up {
+                    width: 72%;
+                }
+
+                @include for-desktop-up {
+                    width: 82%;
+                    margin-top: 20px;
+                }
+
+                .icon-and-footer-information {
+                    width: 209px;
+                    height: 64px;
+                    display: flex;
+                    flex-direction: column;
+
+                    @include for-sm-phone-only {
+                        width: 90%;
+                        height: 115px;
+                        margin: 0 auto;
+                    }
+
+                    @include for-small-phone-only {
+                        width: 150px;
+                    }
+
+                    @include for-tablet-portrait-up  {
+                        width: 209px;
+                    }
+
+                    @include for-desktop-up {
+                        margin: 0;
+                    }
+
+                    .icon-in-box-information {
+                        width: 188px;
+                        height: 17px;
+                        display: flex;
+                        flex-direction: row;
+
+                        @include for-sm-phone-only {
+                            width: auto;
+                            margin: 10px 0 10px 0;
+                        }
+
+                        @include for-tablet-portrait-up  {
+                            width: 190px;
+                        }
+
+                        .footer-icon-styles {
+                            width: 16px;
+                            height: 18px;
+                        }
+
+                        .main-information-text {
+                            margin: 0 auto;
+                            color: #555555;
+                            font-family: "Myriad Pro";
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-left: 21px;
+                            margin-top: 4px;
+                        }
+                    }
+
+                    .bottom-text-information {
+                        margin-left: 25px;
+                        width: 191px;
+                        height: 34px;
+
+                        @include for-sm-phone-only {
+                            margin: 0;
+                            width: 170px;
+                            height: 25px;
+                        }
+
+                        .maps-street-info {
+                            color: #555555;
+                            font-size: 12px;
+                            font-weight: 400;
+                            font-family: "Myriad Pro";
+
+                            @include for-sm-phone-only {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .questions-box {
+                display: flex;
+                flex-direction: column;
+                width: 730px;
+
+                @include for-xs-phone-only {
+                    width: 100%;
+                }
+
+                @include for-sm-phone-only {
+                    width: 426px;
+                }
+
+                @include for-small-phone-only {
+                    width: 95%;
+                    margin: 0 auto;
+                }
+
+                @include for-tablet-portrait-up {
+                    width: 85%;
+                }
+
+                @include for-tablet-landscape-up {
+                    width: 72%;
+                    margin-bottom: 30px;
+                }
+
+                .information-menu {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    @include for-xs-phone-only {
+                        flex-direction: column;
+                        padding-left: 20px;
+                        width: 90%;
+                    }
+
+                    @include for-sm-phone-only {
+                        padding-left: 15px;
+                    }
+
+                    @include for-small-phone-only {
+                        padding-left: 0;
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+
+                    .placeholder-input {
+                        width: 335px;
+                        height: 44px;
+                        border: 1px solid #555555;
+                        padding-left: 15px;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: #555555;
+                        margin-right: 30px;
+                        margin-bottom: 21px;
+                        cursor: pointer;
+
+                        @include for-xs-phone-only {
+                            width: 300px;
+                        }
+
+                        @include for-sm-phone-only {
+                            width: 300px;
+                        }
+
+                        @include for-small-phone-only  {
+                            width: 250px;
+                            margin-right: 0;
+                        }
+
+                        @include for-phone-only {
+                            width: 340px;
+                        }
+
+                        @include for-tablet-portrait-up {
+                            width: 390px;
+                        }
+                    }
+
+                    .big-placeholder-input {
+                        width: 682px;
+                        height: 104px;
+                        border: 1px solid #555555;
+                        padding-left: 15px;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: #555555;
+                        display: flex;
+                        margin-bottom: 21px;
+                        cursor: pointer;
+
+                        @include for-xs-phone-only {
+                            width: 300px;
+                        }
+
+                        @include for-sm-phone-only {
+                            width: 362px;
+                        }
+
+                        @include for-small-phone-only {
+                            width: 1637px;
+                        }
+                    }
+
+                    .btn-placeholder-input {
+                        width: 170px;
+                        height: 44px;
+                        border: 1px solid #555555;
+                        padding-left: 35px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.red-footer { 
+    background-color: #c0301c;
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+    .red-footer-img-and-txt {
+        display: flex;
+        flex-direction: column;
+        width:320px;
+        height: 207px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        .img-red-footer-row {
+            display: flex;
+            flex-direction: row;
+
+            .red-footer-logo {
+                width: 35px;
+                height: 35px;
+                padding-left: 14px;
+            }
+        }
+
+        .red-footer-subtitle {
+            color: #ffffff;
+            font-family: "Myriad Pro";
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            text-transform: uppercase;
+            width:270px;     
+        }
+
+        .red-footer-subtitle::before {
+            width: 50px;
+            content: '';
+            height: 2px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 25px;
+        }
+    }  
+}
