@@ -1,0 +1,162 @@
+@import "../components/bg-img.scss";
+@import '../scss/media.scss';
+
+.middle-section {
+    background-color: rgb(24, 35, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .middle-title-container {
+        position: relative;
+        right: 260px;
+
+        @include for-xs-phone-only {
+           right: 0;
+         }
+
+         @include for-sm-phone-only {
+            right: 0;
+        }
+
+        @include for-tablet-portrait-up {
+            right: 235px;
+        }
+
+        .middle-title {
+            margin-top: 80px;
+            text-transform: uppercase;
+            font-family: lulo-clean-w01-one-bold, sans-serif;
+            font-size: 30px;
+            color: #957B5F;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            text-align: center;
+        }
+
+        .middle-title-two {
+            letter-spacing: 0.2em;
+            color: #D5D5D5;
+            font-size: 23px;
+            text-transform: uppercase;
+            font-family: avenir-lt-w01_35-light1475496,sans-serif;       
+            line-height: 1.6em;
+            text-align: center;
+            margin-right: 5px;
+        }
+    }
+
+    .middle-content-container {
+        display: flex;
+        flex-direction: row;
+
+        @include for-xs-phone-only {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include for-sm-phone-only {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include for-tablet-portrait-up {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .middle-image-wrap {
+           
+            .middle-img {
+                padding-top: 85px;
+
+                @include for-xs-phone-only {
+                    width: 375px;
+                    height: 281px;
+                    padding-top: 50px;
+                 }
+
+                 @include for-sm-phone-only {
+                    width: 375px;
+                    height: 281px;
+                }
+
+                @include for-small-phone-only {
+                    height: 360px;
+                    width: 480px
+                }
+            }
+        }
+
+        .middle-text-container { 
+            display: flex;
+            padding-left: 95px;
+            flex-direction: column;
+            margin-top: 140px;
+            align-items: flex-start;
+            width: 280px;
+
+            @include for-xs-phone-only {
+                margin-top: 10px;
+                padding-left: 0;
+             }
+
+             @include for-sm-phone-only {
+               justify-content: center;
+                margin-top: 20px;
+                padding-left: 0;
+            }
+
+            @include for-small-phone-only {
+                width: 300px;
+            }
+
+            @include for-tablet-portrait-up {
+                padding-left: 25px;
+            }
+ 
+            .date {
+                letter-spacing: 0.25em;
+                line-height: 1.2em;
+                font-family: avenir-lt-w01_35-light1475496, sans-serif;
+                color: #D5D5D5;
+                letter-spacing: 0.1em;
+                padding-right: 222px;    
+            }
+
+            .adress {
+                color: #957B5F;
+                vertical-align: baseline;
+                line-height: 1.2em;
+                font-family: lulo-clean-w01-one-bold, sans-serif;
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: 800;
+                margin-top: 20px;
+                letter-spacing: 0.1em;
+            }
+
+            .text {
+                line-height: 1.4em;
+                color: #D5D5D5;
+                font-size: 14px;
+                margin-top: 20px;
+                letter-spacing: 0.1em;
+                padding-right: 8px;
+            }
+
+            .view {
+                color: #D5D5D5;
+                font-size: 16px;
+                margin-top: 50px;
+                padding-right: 190px;
+                cursor: pointer;
+            }
+
+            .view:hover {
+                transition: 0.3s;
+                color: #c07928;
+            }
+        }
+    }
+}  

@@ -1,0 +1,290 @@
+@import "../components/bg-img.scss";
+@import "../scss/media.scss";
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/town-3.jpg);
+    height: 47em;
+    @extend %bg-img;
+
+    @include for-xs-phone-only {
+        justify-content: space-between;
+    } 
+
+    @include for-sm-phone-only {
+        justify-content: space-between;
+    }
+
+    @include for-phone-only {
+        justify-content: center;
+    }
+    
+    .header-left-container {
+        display: flex;
+        flex-direction: row;
+        height: 110px;
+        align-items: center;
+
+        @include for-xs-phone-only {
+            margin-left: 30px; 
+        }
+
+         @include for-sm-phone-only {
+            margin-left: 30px;
+        }
+
+        @include for-phone-only {
+            margin: 0;
+        }
+        
+        .header-logo {
+            margin-right: 25px;
+            font-size: 20px;
+            color: #af6b1d;
+            border: 3px solid #b1742e;
+            width: 47px;
+            height: 40px;
+            font-weight: 600;
+            font-family: avenir-lt-w01_35-light1475496, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer; 
+        }
+
+        .arch {
+            font-size: 21px;
+            color: #af712b;
+            font-family: avenir-lt-w01_35-light1475496, sans-serif;
+            text-transform: uppercase;
+            font-weight: 545;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+        }
+    }
+
+    .header-right-container {
+        display: flex;
+        height: 110px;
+        align-items: center;
+        font-size: 14px;
+
+        @include for-xs-phone-only {
+            margin-right: 30px; 
+        }
+
+         @include for-sm-phone-only {
+            margin-right: 30px;
+        }
+  
+        @include for-phone-only {
+            justify-content: space-between;
+            margin: 0;
+        }  
+
+        .header-menu-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 593px;
+
+            @include for-xs-phone-only {
+                display: none;
+            }
+    
+            @include for-sm-phone-only {
+                display: none;
+            }
+
+            @include for-phone-only {
+                display: flex; 
+                width: 400px;
+            }
+
+            @include for-tablet-portrait-up {
+                width: 593px;
+            }
+
+            .nav-element-home{
+                line-height: 20px;
+                list-style: none;
+                text-transform: uppercase ;
+                font-family: avenir-lt-w01_35-light1475496, sans-serif;
+                cursor: pointer;
+
+                .nav-element-link  {
+                    color: #b97930;
+                    text-decoration: none;  
+                } 
+            }
+            
+            .nav-element {
+                line-height: 20px;
+                list-style: none;
+                text-transform: uppercase;
+                font-family: avenir-lt-w01_35-light1475496, sans-serif;
+                cursor: pointer;
+
+                .nav-element-link  {
+                    color: #c7b8b8;
+                    text-decoration: none;
+                } 
+                .nav-element-link:hover {
+                    transition: 0.2s;
+                    color: #c27e30;
+                }
+            }    
+        }
+        .container-burger {
+            display: inline-block;
+            cursor: pointer;
+            color: #c27e30;
+            
+            @include for-phone-only {
+                display: none;
+            }
+            
+            .burger-icon {
+                font-size: 30px;
+            }
+        }   
+    }   
+
+    &.open {
+        position: relative;
+        z-index: 10;
+
+        @include for-phone-only {
+            z-index: 0;
+            display: none;
+        }
+
+        .header-right-container {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            position: fixed;
+            height: 100vh;
+            background-color: rgba(198, 164, 126, 1);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            justify-content: flex-end;
+            line-height: 1.4em;
+            letter-spacing: 2px;
+    
+            @include for-xs-phone-only {
+                margin-right: 0;           
+            }
+    
+             @include for-sm-phone-only {
+                margin-right: 0;
+            }
+      
+            @include for-phone-only {
+                justify-content: space-between;
+                margin: 0;
+            }  
+    
+            .header-menu-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 593px;
+    
+                @include for-xs-phone-only {
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                    align-self: flex-start;
+                    margin-top: 160px;
+                }
+        
+                @include for-sm-phone-only {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                    padding-left: 20px;
+                }
+    
+                @include for-phone-only {
+                    display: flex; 
+                    width: 400px;
+                }
+    
+                @include for-tablet-portrait-up {
+                    width: 593px;
+                }
+    
+                .nav-element-home{
+                    line-height: 20px;
+                    list-style: none;
+                    text-transform: uppercase ;
+                    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+                    cursor: pointer;
+                    padding: 15px 0;
+                    width: 146px;
+                    align-items: center;
+                    display: flex;
+    
+                    .nav-element-link  {
+                        color: white;
+                        text-decoration: none;
+                        margin: 0 auto;
+                    } 
+                }
+                
+                .nav-element {
+                    line-height: 20px;
+                    list-style: none;
+                    text-transform: uppercase;
+                    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+                    cursor: pointer;
+                    padding: 15px 0;
+                    border-top: 1px solid white;
+                    width: 146px;
+                    display: flex;
+                    text-align: center;
+    
+                    .nav-element-link  {
+                        color: #2b2b2b;
+                        text-decoration: none;
+                        font-family: avenir-lt-w01_35-light1475496, sans-serif;
+                        font-weight: 100;
+                        margin: 0 auto;   
+                    } 
+                    .nav-element-link:hover {
+                        transition: 0.2s;
+                        color: #c27e30;
+                    }
+                }    
+            }
+            
+            .container-burger {
+                cursor: pointer;
+                display: inline-block;
+                color: white;
+                position: relative;
+                bottom: 320px;
+                right: 25px;
+                font-weight:lighter;
+                -webkit-text-stroke: 0.01px white;
+                
+                @include for-phone-only {
+                    display: none;
+                }
+                
+                .burger-icon {
+                    font-size: 30px;
+                    font-weight: lighter;
+                    font-weight: 200;
+                    -webkit-text-stroke: 0.01pxs white;   
+                }
+            }   
+        }   
+    }
+}   
+
+

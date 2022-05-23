@@ -1,0 +1,116 @@
+.recent-news-section {
+  background-color: #182329;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-top: 120px;
+  justify-content: center;
+  font-family: avenir-lt-w01_35-light1475496, sans-serif;
+  padding-right: 10px; }
+  @media (max-width: 425px) {
+    .recent-news-section {
+      padding-top: 90px;
+      align-items: center; } }
+  .recent-news-section .recent-news {
+    letter-spacing: 0.2em;
+    color: #D5D5D5;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 302px; }
+    @media (max-width: 425px) {
+      .recent-news-section .recent-news {
+        right: 0;
+        justify-content: center;
+        padding-left: 15px; } }
+    @media (min-width: 426px) {
+      .recent-news-section .recent-news {
+        right: 0;
+        padding-right: 13px; } }
+    @media (min-width: 991px) {
+      .recent-news-section .recent-news {
+        right: 275px; } }
+  .recent-news-section .container-info-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    @media (max-width: 425px) {
+      .recent-news-section .container-info-wrap {
+        flex-direction: column; } }
+    @media (min-width: 426px) {
+      .recent-news-section .container-info-wrap {
+        flex-direction: column; } }
+    @media (min-width: 991px) {
+      .recent-news-section .container-info-wrap {
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 150px; } }
+    .recent-news-section .container-info-wrap .container-info {
+      display: flex;
+      flex-direction: column;
+      padding: 0 50px;
+      align-items: flex-start;
+      margin-bottom: 150px; }
+      @media (max-width: 425px) {
+        .recent-news-section .container-info-wrap .container-info {
+          padding-right: 70px;
+          margin-bottom: 50px;
+          padding: 0 95px; } }
+      @media (min-width: 426px) {
+        .recent-news-section .container-info-wrap .container-info {
+          padding: 0 0px;
+          margin-bottom: 50px;
+          align-items: center; } }
+      @media (min-width: 426px) {
+        .recent-news-section .container-info-wrap .container-info {
+          flex-direction: column; } }
+      @media (min-width: 991px) {
+        .recent-news-section .container-info-wrap .container-info {
+          margin: 0 37px; } }
+      .recent-news-section .container-info-wrap .container-info .last-number {
+        font-size: 120px;
+        letter-spacing: 0.1em;
+        color: #957B5F;
+        font-weight: 900;
+        padding-top: 50px; }
+        @media (max-width: 425px) {
+          .recent-news-section .container-info-wrap .container-info .last-number {
+            padding-top: 0;
+            font-size: 50px; } }
+        @media (min-width: 426px) {
+          .recent-news-section .container-info-wrap .container-info .last-number {
+            padding-top: 0; } }
+      .recent-news-section .container-info-wrap .container-info .last-date {
+        letter-spacing: 0.5em;
+        color: #D5D5D5;
+        line-height: 1.2em;
+        font-size: 15px; }
+      .recent-news-section .container-info-wrap .container-info .last-paragraph {
+        line-height: 1.4em;
+        color: #D5D5D5;
+        width: 217px;
+        padding-top: 35px;
+        letter-spacing: 0.09em; }
+      .recent-news-section .container-info-wrap .container-info .last-read-more {
+        font-size: 15px;
+        line-height: 1.4em;
+        cursor: pointer;
+        color: #D5D5D5;
+        padding-top: 100px; }
+        @media (max-width: 425px) {
+          .recent-news-section .container-info-wrap .container-info .last-read-more {
+            padding-top: 30px; } }
+        @media (min-width: 426px) {
+          .recent-news-section .container-info-wrap .container-info .last-read-more {
+            padding-top: 25px; } }
+        @media (min-width: 991px) {
+          .recent-news-section .container-info-wrap .container-info .last-read-more {
+            display: flex;
+            align-self: flex-start;
+            padding-top: 80px; } }
+      .recent-news-section .container-info-wrap .container-info .last-read-more:hover {
+        transition: 0.2s;
+        color: #b97930; }

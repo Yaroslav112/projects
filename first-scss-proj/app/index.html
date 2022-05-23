@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../app/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left-container">
+            <div class="header-logo">
+                <p>LT</p>
+            </div>
+            <div class="arch">
+                <p>architects</p>
+            </div>
+        </div>
+        <nav class="header-right-container">
+            <ul class="header-menu-container">
+                <li class="nav-element-home">
+                    <a class="nav-element-link" href="#">home</a>
+                </li>
+                <li class="nav-element">
+                    <a class="nav-element-link" href="#">portfolio</a>
+                </li>
+                <li class="nav-element">
+                    <a class="nav-element-link" href="#">about</a>
+                </li>
+                <li class="nav-element">
+                    <a class="nav-element-link" href="#">news</a>
+                </li>
+            </ul>
+            <div class="container-burger" onclick="toggleMenu()">
+                <i class="fa fa-navicon burger-icon"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="middle-section">
+        <div class="middle-title-container">
+            <div class="middle-title">
+                <span>lt architects</span> 
+            </div>
+            <div class="middle-title-two">
+                <span>featured projects</span>
+            </div>
+        </div>
+        <div class="middle-content-container">
+            <div class="middle-image-wrap">
+                <img class="middle-img" src="https://static.wixstatic.com/media/f61af8_31cf11b7f9c44adbadca00cc2a52a30c~mv2_d_5567_3716_s_4_2.png/v1/fill/w_601,h_450,al_c,q_85,usm_0.66_1.00_0.01/f61af8_31cf11b7f9c44adbadca00cc2a52a30c~mv2_d_5567_3716_s_4_2.webp">
+            </div>
+            <div class="middle-text-container">
+                <span class="date">01/23</span>
+                <span class="adress">ECL Hall<br> boston</span>
+                <span class="text">I'm a paragraph. Click here to add<br> your own text and edit me. I’m a<br> great place for you to tell a story.</span>
+                <span class="view">View project</span>
+            </div>
+        </div>
+        <div class="middle-content-container">
+            <div class="middle-image-wrap">
+                <img class="middle-img" src="https://static.wixstatic.com/media/f61af8_59b58c2825844fd4ac154229351abf87~mv2_d_4835_3223_s_4_2.jpg/v1/fill/w_601,h_450,al_c,q_80,usm_0.66_1.00_0.01/f61af8_59b58c2825844fd4ac154229351abf87~mv2_d_4835_3223_s_4_2.webp">
+            </div>
+            <div class="middle-text-container">
+                <span class="date">02/23</span>
+                <span class="adress">louis house,<br>PORTlAND</span>
+                <span class="text">I'm a paragraph. Click here to add<br> your own text and edit me. I’m a<br> great place for you to tell a story.</span>
+                <span class="view">View project</span>
+            </div>
+        </div>
+        <div class="middle-content-container">
+            <div class="middle-image-wrap">
+                <img class="middle-img" src="https://static.wixstatic.com/media/f61af8_142df1295dfc4f81bcb7cf730733b998~mv2_d_2000_1333_s_2.jpg/v1/fill/w_604,h_450,al_c,q_80,usm_0.66_1.00_0.01/f61af8_142df1295dfc4f81bcb7cf730733b998~mv2_d_2000_1333_s_2.webp">
+            </div>
+            <div class="middle-text-container">
+                <span class="date">03/23</span>
+                <span class="adress">YC TOWERS,<br>SAN DIEGO</span>
+                <span class="text">I'm a paragraph. Click here to add<br> your own text and edit me. I’m a<br> great place for you to tell a story.</span>
+                <span class="view">View project</span>
+            </div>
+        </div>
+    </section>
+    <section class="recent-news-section">
+        <div class="recent-news">
+            <div>recent news</div>
+        </div> 
+        <div class="container-info-wrap">
+            <div class="container-info">      
+                <span class="last-number">01</span>
+                <span class="last-date">11     /     06     /     2023</span>
+                <span class="last-paragraph">I'm a paragraph. Click<br> here to add your own text<br> and edit me. I’m a great<br> place for you to tell a<br> story.</span>
+                <span class="last-read-more">Read more</span>
+            </div>
+            <div class="container-info">
+                <span class="last-number">02</span>
+                <span class="last-date">11     /     06     /     2023</span>
+                <span class="last-paragraph">I'm a paragraph. Click<br> here to add your own text<br> and edit me. I’m a great<br> place for you to tell a<br> story.</span>
+                <span class="last-read-more">Read more</span>
+            </div>
+            <div class="container-info">
+                <span class="last-number">03</span>
+                <span class="last-date">11     /     06     /     2023</span>
+                <span class="last-paragraph">I'm a paragraph. Click<br> here to add your own text<br> and edit me. I’m a great<br> place for you to tell a<br> story.</span>
+                <span class="last-read-more">Read more</span>
+            </div>
+        </div>   
+    </section>
+    <footer>
+        <div class="left-footer-container">
+            <div class="touch">
+                <span>Get in touch</span>
+            </div>
+            <div class="left-footer-less-container">
+                <div class="footer-info-left" >      
+                    <div>Tel 123-456-7890</div>
+                    <div>Email: info@mysite.com</div> 
+                    
+                </div>
+                <div class="footer-info-right">   
+                    <div>500 Terry Francois St </div>
+                    <div>San Francisco, CA 94158</div> 
+                </div>
+            </div>
+            <div class="footer-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <div class="ps">
+                <span>© 2023 by L&T architects. Proudly created with Wix.com</span>
+            </div>
+        </div>
+        <div class="right-footer-container">
+            <div class="contact">
+                <span>contact us</span>
+            </div>
+            <form class="right-footer-info">
+                <div class="footer-name-and-email-container">
+                    <div class="footer-input-container">
+                        <label class="footer-label" for="">Enter Your Name *</label>
+                        <input class="footer-input" type="text" name="Enter Your Name" placeholder="Name"> 
+                    </div>  
+                    <div class="footer-input-container">
+                        <label class="footer-label" for="">Enter Your Email *</label>
+                        <input class="footer-input" type="text" name="Enter Your Email" placeholder="Email">  
+                    </div>
+                </div>
+                <div class="footer-area-container">  
+                    <label class="footer-label" for="">Enter Your Message *</label>  
+                    <textarea  class="footer-area-input" placeholder="Message"></textarea>
+                    <button class="button">Send</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
