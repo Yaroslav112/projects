@@ -1,0 +1,80 @@
+.gallery-section {
+  margin-bottom: 100px;
+
+    .gallery-title-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 90px;
+
+        .gallery-title {
+            color: #2c4058;
+            font-family: sans-serif;
+            font-size: 44px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .gallery-title::after {
+            content: "";
+            position: absolute;
+            bottom: 75px;
+            left: 0;
+            width: 100px;
+            height: 1px;
+            background-color: rgb(12, 0, 0);
+            right: 0;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    .gallery-img-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        .gallery-right-container {
+            margin-left: 10px;
+            width: 580px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .gal-img-four {
+                margin-left: 5px;
+            }
+
+            .gal-img-five {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .gallery-button-container {
+        display: flex;
+        justify-content: center;
+
+        .gallery-button {
+            color: #2c4058;
+            font-family: "Gotham - Book";
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 12px 40px;
+            background-color: #ffffff;
+            border: 1px solid #2c4058;
+            transition: 0.5s;   
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        .gallery-button:hover {
+            background-color: #2c4058;
+            color: #ffffff;
+            transition: 0.5s;
+        }
+    }
+}

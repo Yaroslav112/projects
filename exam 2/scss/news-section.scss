@@ -1,0 +1,116 @@
+.news-section {
+    background-image: url(../img/Bg-news.png);
+    height: 130vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .news-title {
+        padding-top: 80px;
+
+        .news{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            color: #ffffff;
+            font-family: sans-serif;
+            font-size: 44px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .news::after {
+            content: "";
+            position: absolute;
+            bottom: 75px;
+            left: 0;
+            width: 100px;
+            height: 1px;
+            background-color: rgb(255, 255, 255);
+            right: 0;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    .owl-carousel {
+        display: flex;
+        flex-direction: row;
+        max-width: 1170px;
+        justify-content: space-between;
+        margin: 75px auto 0 auto;
+
+        .owl-dots {
+            display: flex;
+        }
+       
+        .news-container {
+            
+            .content-container {
+                background-color: white;
+                position: relative;
+                bottom: 5px;
+                padding-left: 20px;
+                padding-top: 25px;
+                height: 225px;
+
+                .news-container-wrap {
+               
+                    .news-text-top {
+                        margin: 0;
+                        color: #2c4058;
+                        font-family: sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        width: 300px;
+                    }
+        
+                    .news-text-bot {
+                        color: #4b5562;
+                        font-family: "Open Sans";
+                        font-size: 18px;
+                        font-weight: 400;   
+                        width: 320px;
+                        margin: 10px 0;
+                    }
+                }
+    
+                .icon-text-container {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 30px;
+    
+                    .news-icon {
+                        width: 60px;
+                        height: 60px;
+                    }
+    
+                    .text-container-news {
+                        margin-left: 15px;
+    
+                        .news-avtor {
+                            color: #2c4058;
+                            font-family: "Gotham - Book";
+                            font-size: 18px;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            margin-bottom: 0;
+                            margin-top: 5px;
+                        }
+            
+                        .news-date {
+                            color: #55b7ff;
+                            font-family: "Gotham - Book";
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-top: 5px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
